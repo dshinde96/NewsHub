@@ -1,7 +1,7 @@
 
 import React, { Component, useState } from "react";
-import Navbar from './Components.js/Navbar'
-import News from "./Components.js/News";
+import Navbar from './Components/Navbar'
+import News from "./Components/News";
 import { Route, Routes, useLocation, useNavigate ,Redirect, Navigate} from "react-router-dom";
 
 

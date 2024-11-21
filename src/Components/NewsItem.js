@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 // import News from './News'
 
 export default function NewsItem(props) {
@@ -9,7 +9,7 @@ export default function NewsItem(props) {
                     <div className="card-body">
                         <h5 className="card-title">{props.title}...</h5>
                         <p className="card-text">{props.desc}...</p>
-                        <a href={props.newsUrl} className="btn btn-sm btn-primary" target='_blank'>Read More</a>
+                        <a href={props.newsUrl} className="btn btn-sm btn-primary">Read More</a>
                         <p class="card-text my-3"><small class="text-body-secondary">By {props.author==null?"unknown author":props.author} on {Date(props.publishedAt)}</small></p>
                     </div>
             </div>

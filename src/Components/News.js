@@ -31,7 +31,7 @@ const News = (props) => {
   const handlePrev = async () => {
     // console.log("Prev");
     set_loading(true);
-    let data = await fetch(`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=b7803c6359c440298d210e0265edd7d6&page=${page - 1}&pagesize=${props.pagesize}`);
+    let data = await fetch(`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=ae9feb1d2a3749f3a191b433842ccad8&page=${page - 1}&pagesize=${props.pagesize}`);
     // console.log(data);
     let parsedata = await data.json();
     // console.log(parsedata.articles);
